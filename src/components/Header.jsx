@@ -32,7 +32,7 @@ const Header = ({ isScrolling }) => {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 sm:gap-3 group" onClick={() => setMobileMenuOpen(false)}>
             <motion.img
-              src="/logo.png"
+              src={`${import.meta.env.BASE_URL}logo.png`}
               alt="Circle Nas Logo"
               className="h-11 w-11 sm:h-14 sm:w-14 object-contain flex-shrink-0"
               whileHover={{ scale: 1.05 }}

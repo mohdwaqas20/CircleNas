@@ -32,7 +32,7 @@ const Footer = () => {
           <motion.div variants={itemVariants} className="space-y-4">
             <div className="flex items-center gap-3 mb-4">
               <img 
-                src="/logo.png" 
+                src={`${import.meta.env.BASE_URL}logo.png`} 
                 alt="Circle Nas Logo" 
                 className="h-12 w-12 object-contain"
               />

@@ -64,12 +64,12 @@ const Home = () => {
   ]
 
   const projects = [
-    { img: '/project1.jpg', title: 'Industrial Pipe Cladding', loc: 'Abu Dhabi, UAE', cat: 'Pipe Cladding' },
-    { img: '/project2.jpg', title: 'Rooftop Duct Installation', loc: 'Dubai, UAE', cat: 'HVAC Installation' },
-    { img: '/project3.jpg', title: 'Mechanical Room Ducting', loc: 'Abu Dhabi, UAE', cat: 'Duct Cladding' },
-    { img: '/project4.jpg', title: 'Industrial Ventilation', loc: 'Jebel Ali, UAE', cat: 'HVAC Installation' },
-    { img: '/project5.jpg', title: 'External Duct Cladding', loc: 'Dubai, UAE', cat: 'Duct Cladding' },
-    { img: '/project6.jpg', title: 'Chilled Water Pipe System', loc: 'Abu Dhabi, UAE', cat: 'Pipe Cladding' },
+    { img: `${import.meta.env.BASE_URL}project1.jpg`, title: 'Industrial Pipe Cladding', loc: 'Abu Dhabi, UAE', cat: 'Pipe Cladding' },
+    { img: `${import.meta.env.BASE_URL}project2.jpg`, title: 'Rooftop Duct Installation', loc: 'Dubai, UAE', cat: 'HVAC Installation' },
+    { img: `${import.meta.env.BASE_URL}project3.jpg`, title: 'Mechanical Room Ducting', loc: 'Abu Dhabi, UAE', cat: 'Duct Cladding' },
+    { img: `${import.meta.env.BASE_URL}project4.jpg`, title: 'Industrial Ventilation', loc: 'Jebel Ali, UAE', cat: 'HVAC Installation' },
+    { img: `${import.meta.env.BASE_URL}project5.jpg`, title: 'External Duct Cladding', loc: 'Dubai, UAE', cat: 'Duct Cladding' },
+    { img: `${import.meta.env.BASE_URL}project6.jpg`, title: 'Chilled Water Pipe System', loc: 'Abu Dhabi, UAE', cat: 'Pipe Cladding' },
   ]
 
   return (
@@ -79,7 +79,7 @@ const Home = () => {
       <section className="relative min-h-screen flex items-center pt-20 overflow-hidden">
         {/* Background image collage */}
         <div className="absolute inset-0 grid grid-cols-3 gap-0">
-          {['/project6.jpg', '/project2.jpg', '/project4.jpg'].map((src, i) => (
+          {[`${import.meta.env.BASE_URL}project6.jpg`, `${import.meta.env.BASE_URL}project2.jpg`, `${import.meta.env.BASE_URL}project4.jpg`].map((src, i) => (
             <div key={i} className="relative overflow-hidden">
               <img src={src} alt="" className="w-full h-full object-cover scale-110" />
             </div>
@@ -264,14 +264,14 @@ const Home = () => {
               className="grid grid-cols-2 gap-4 h-[480px]"
             >
               <div className="rounded-2xl overflow-hidden shadow-xl">
-                <img src="/project3.jpg" alt="HVAC work" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                <img src={`${import.meta.env.BASE_URL}project3.jpg`} alt="HVAC work" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
               </div>
               <div className="space-y-4">
                 <div className="rounded-2xl overflow-hidden shadow-xl h-[49%]">
-                  <img src="/project5.jpg" alt="Duct cladding" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                  <img src={`${import.meta.env.BASE_URL}project5.jpg`} alt="Duct cladding" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                 </div>
                 <div className="rounded-2xl overflow-hidden shadow-xl h-[49%]">
-                  <img src="/project1.jpg" alt="Pipe cladding" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
+                  <img src={`${import.meta.env.BASE_URL}project1.jpg`} alt="Pipe cladding" className="w-full h-full object-cover hover:scale-105 transition-transform duration-500" />
                 </div>
               </div>
             </motion.div>

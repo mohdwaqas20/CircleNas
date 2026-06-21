@@ -73,7 +73,7 @@ const Services = () => {
       {/* Header */}
       <section className="py-20 bg-gradient-to-r from-[#0B2E73] to-[#1A73E8] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <img src="/project6.jpg" alt="" className="w-full h-full object-cover" />
+          <img src={`${import.meta.env.BASE_URL}project6.jpg`} alt="" className="w-full h-full object-cover" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="space-y-3">
@@ -178,7 +178,7 @@ const Services = () => {
               viewport={{ once: true }}
               className="rounded-2xl overflow-hidden shadow-2xl"
             >
-              <img src="/project4.jpg" alt="Quality work" className="w-full h-[400px] object-cover" />
+              <img src={`${import.meta.env.BASE_URL}project4.jpg`} alt="Quality work" className="w-full h-[400px] object-cover" />
             </motion.div>
             <motion.div
               initial={{ opacity: 0, x: 40 }}

@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom'
 import { Phone, ArrowRight } from 'lucide-react'
 
 const projects = [
-  { id: 1, img: '/project1.jpg', title: 'Industrial Pipe Cladding', category: 'Pipe Cladding', location: 'Abu Dhabi, UAE', desc: 'Professional stainless steel cladding for industrial-scale pipe systems with thermal insulation.' },
-  { id: 2, img: '/project2.jpg', title: 'Rooftop Duct Installation', category: 'HVAC Installation', location: 'Dubai, UAE', desc: 'Rooftop HVAC duct fabrication and installation for commercial building.' },
-  { id: 3, img: '/project3.jpg', title: 'Mechanical Room Ducting', category: 'Duct Cladding', location: 'Abu Dhabi, UAE', desc: 'Complete mechanical room duct insulation and cladding system.' },
-  { id: 4, img: '/project4.jpg', title: 'Industrial Ventilation System', category: 'HVAC Installation', location: 'Jebel Ali, UAE', desc: 'High-capacity industrial ventilation system with blower and duct assembly.' },
-  { id: 5, img: '/project5.jpg', title: 'External Duct Cladding', category: 'Duct Cladding', location: 'Dubai, UAE', desc: 'Outdoor duct cladding and weatherproofing for building rooftop systems.' },
-  { id: 6, img: '/project6.jpg', title: 'Chilled Water Pipe System', category: 'Pipe Cladding', location: 'Abu Dhabi, UAE', desc: 'Large-scale chilled water pipe insulation and cladding in industrial facility.' },
+  { id: 1, img: `${import.meta.env.BASE_URL}project1.jpg`, title: 'Industrial Pipe Cladding', category: 'Pipe Cladding', location: 'Abu Dhabi, UAE', desc: 'Professional stainless steel cladding for industrial-scale pipe systems with thermal insulation.' },
+  { id: 2, img: `${import.meta.env.BASE_URL}project2.jpg`, title: 'Rooftop Duct Installation', category: 'HVAC Installation', location: 'Dubai, UAE', desc: 'Rooftop HVAC duct fabrication and installation for commercial building.' },
+  { id: 3, img: `${import.meta.env.BASE_URL}project3.jpg`, title: 'Mechanical Room Ducting', category: 'Duct Cladding', location: 'Abu Dhabi, UAE', desc: 'Complete mechanical room duct insulation and cladding system.' },
+  { id: 4, img: `${import.meta.env.BASE_URL}project4.jpg`, title: 'Industrial Ventilation System', category: 'HVAC Installation', location: 'Jebel Ali, UAE', desc: 'High-capacity industrial ventilation system with blower and duct assembly.' },
+  { id: 5, img: `${import.meta.env.BASE_URL}project5.jpg`, title: 'External Duct Cladding', category: 'Duct Cladding', location: 'Dubai, UAE', desc: 'Outdoor duct cladding and weatherproofing for building rooftop systems.' },
+  { id: 6, img: `${import.meta.env.BASE_URL}project6.jpg`, title: 'Chilled Water Pipe System', category: 'Pipe Cladding', location: 'Abu Dhabi, UAE', desc: 'Large-scale chilled water pipe insulation and cladding in industrial facility.' },
 ]
 
 const categories = ['All', 'HVAC Installation', 'Duct Cladding', 'Pipe Cladding']
@@ -49,7 +49,7 @@ const Projects = () => {
       {/* Header */}
       <section className="py-20 bg-gradient-to-r from-[#0B2E73] to-[#1A73E8] relative overflow-hidden">
         <div className="absolute inset-0 opacity-10">
-          <img src="/project4.jpg" alt="" className="w-full h-full object-cover" />
+          <img src={`${import.meta.env.BASE_URL}project4.jpg`} alt="" className="w-full h-full object-cover" />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
           <motion.div initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="space-y-3">

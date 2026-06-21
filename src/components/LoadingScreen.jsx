@@ -34,7 +34,7 @@ export default function LoadingScreen({ show }) {
 
           {/* Logo */}
           <motion.img
-            src="/logo.png"
+            src={`${import.meta.env.BASE_URL}logo.png`}
             alt="Circle Nas General Contracting"
             className="relative z-10"
             style={{
