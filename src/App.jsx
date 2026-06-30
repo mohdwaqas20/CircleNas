@@ -40,7 +40,7 @@ function App() {
   }, [loading])
 
   return (
-    <Router basename="/CircleNas">
+    <Router>
       <LoadingScreen show={loading} />
       <Header isScrolling={isScrolling} />
       <main>
